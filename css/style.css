@@ -1,0 +1,19 @@
+/* CSS for Portfolio Chris Friemann */
+
+/* Fonts */
+@font-face {
+    font-family: 'AvenirLTstd-Black';
+    src: url('../fonts/AvenirLTStd-Black.otf');
+}
+
+@font-face {
+    font-family: 'AvenirLTstd-Book';
+    src: url('../fonts/AvenirLTStd-Book.otf');
+}
+
+@font-face {
+    font-family: 'AvenirLTstd-Roman';
+    src: url('../fonts/AvenirLTStd-Roman.otf');
+}
+
+/* End Fonts */
