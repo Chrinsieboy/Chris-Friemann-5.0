@@ -1,4 +1,4 @@
-<p align="center"><a href="https://chris.friemann.nl/" target="_blank"><img src="https://raw.githubusercontent.com/Chrinsieboy/Chris-Friemann-5.0/main/img/Achtergrond.png?token=GHSAT0AAAAAABOVTZ7HO4GGGHFZJSGONIBSYQFI4HQ" width="400"></a></p>
+<a href="https://chris.friemann.nl/" target="_blank"><img src="https://raw.githubusercontent.com/Chrinsieboy/Chris-Friemann-5.0/main/img/Achtergrond.png?token=GHSAT0AAAAAABOVTZ7HO4GGGHFZJSGONIBSYQFI4HQ" width="400"></a>
 
 # About Chris Friemann Portfolio 5.0
 This is the fith version portfolio of Chris Friemann.
