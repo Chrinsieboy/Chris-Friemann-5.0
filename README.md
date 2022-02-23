@@ -1,7 +1,7 @@
 <a href="https://chris.friemann.nl/" target="_blank"><img src="https://github.com/Chrinsieboy/Chris-Friemann-5.0/blob/main/img/Achtergrond.png" width="400"></a>
 
 # About Chris Friemann Portfolio 5.0
-This is the fith version portfolio of Chris Friemann.
+This is the fifth version portfolio of Chris Friemann.
 and it is a new version of the portfolio. 😉
 
 ## License and Copyright
