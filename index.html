@@ -20,18 +20,36 @@
     <div class="sidenav1">
         <span style="font-size: 30px;cursor: pointer;font-weight: bolder;" onclick="openNav()">&#9776;</span>
         <div id="SideNavBar" class="sidenav2">
+            <a href="javascript:void(0)" class="logo" onclick="scrollToTop()">
+                <img src="./img/logo.png" alt="logo">
+            </a>
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#home" class="navlink">Home</a>
-            <a href="#about" class="navlink">Over</a>
-            <a href="#projects" class="navlink">Projecten</a>
-            <a href="#contact" class="navlink">Contact</a>
-            <a href="/download/cv.pdf" class="navlink" download>Download <br> CV</a>
+            <a href="javascript:void(0)" class="navlink" onclick="scrollToTop()">Home</a>
+            <a href="javascript:void(0)" class="navlink" onclick="scrollToAbout()">Over</a>
+            <a href="javascript:void(0)" class="navlink" onclick="scrollToProjects()">Projecten</a>
+            <a href="javascript:void(0)" class="navlink" onclick="scrollToContact()">Contact</a>
+            <a href="/download/cv.pdf" class="navlink" download>Download<br>CV</a>
         </div>
     </div>
     <div class="title display-container text-center" id="home">
         <h1 class="main-title">Ik Ben Chris Friemann</h1>
         <h3 class="sub-title">Student Software Developer</h3>
         <i class="fa fa-arrow-down arrow-title text-center"></i>
+    </div>
+    <div class="about-background" id="About">
+        <h2 class="about-title text-center">Introductie</h2>
+        <div class="about-container">
+            <div class="about-text-container">
+                <h2 class="about-hey">Hallo, </h2>
+                <p class="about-me">Ik ben Chris Friemann, 17 jaar en ik studeer de software developer opleiding bij
+                    Landstede MBO.<br><br> In deze portfolio kunt u mijn projecten en mijn CV bekijken en kunt u contact
+                    met mij opleggen. </p>
+            </div>
+            <div class="about-profile-container tooltip">
+                <img class="about-img" src="img/profile.jpg" alt="profile picture">
+                <span class="tooltiptext">😲<br>Secret message!</span>
+            </div>
+        </div>
     </div>
 </body>
 
