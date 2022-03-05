@@ -214,6 +214,8 @@ body {
 }
 
 .about-profile-container {
+/* Empty */
+position: auto;
 }
 
 .about-img {
