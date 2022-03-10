@@ -32,6 +32,7 @@ function scrollToContact() {
     document.getElementById("SideNavBar").style.width = "0";
 }
 
+// Read more for the projects
 function readMore() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
@@ -46,4 +47,15 @@ function readMore() {
       btnText.innerHTML = "Minder Projecten";
       moreText.style.display = "inline";
     }
+  }
+
+// Load the page in X seconds
+  function loader() {
+    var myVar;
+    myVar = setTimeout(showPage, 1000);
+  }
+  
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("loader2").style.display = "block";
   }
