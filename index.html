@@ -13,9 +13,9 @@
     <script src="https://kit.fontawesome.com/f83e64cd36.js" crossorigin="anonymous"></script>
 </head>
 
-<body onload="myFunction()" style="margin:0;">
+<body onload="loader()" style="margin:0;">
     <div id="loader"></div>
-    <div style="display:none;" id="myDiv" class="animate-bottom">
+    <div style="display:none;" id="loader2" class="animate-bottom">
         <video class="display-opacity background-video" autoplay muted loop id="background-video">
             <source src="/video/introfilm.mp4" type="video/mp4">
         </video>
@@ -194,18 +194,4 @@
         </div>
     </div>
 </body>
-
-<script>
-    var myVar;
-    
-    function myFunction() {
-      myVar = setTimeout(showPage, 3000);
-    }
-    
-    function showPage() {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("myDiv").style.display = "block";
-    }
-    </script>
-
 </html>
