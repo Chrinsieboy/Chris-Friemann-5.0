@@ -31,3 +31,19 @@ function scrollToContact() {
     document.getElementById("Contact").scrollIntoView();
     document.getElementById("SideNavBar").style.width = "0";
 }
+
+function readMore() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("moreBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Meer Projecten";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Minder Projecten";
+      moreText.style.display = "inline";
+    }
+  }
