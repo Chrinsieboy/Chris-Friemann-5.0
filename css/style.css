@@ -226,7 +226,7 @@ body {
 /* Projects */
 
 .projects-background {
-  background-color: #5e5e5e;
+  background-color: #8a8a8a;
   padding: 10px;
   position: relative;
 }
@@ -502,14 +502,14 @@ body {
 }
 
 .btn-more-projects:hover {
-  background-color: #7e7e7e;
+  background-color: #0e76fd;
   transition: 0.3s;
 }
 
 .btn-more-projects {
   text-align: center;
-  background-color: #313131;
-  color: white;
+  background-color: #4b99ff;
+  color: #f2f2f2;
   border: none;
   font-size: 2rem;
   letter-spacing: 0.1rem;
