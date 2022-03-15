@@ -52,7 +52,7 @@ function readMore() {
 // Load the page in X seconds
   function loader() {
     var myVar;
-    myVar = setTimeout(showPage, 1000);
+    myVar = setTimeout(showPage, 500);
   }
   
   function showPage() {
