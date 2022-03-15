@@ -37,25 +37,35 @@ function readMore() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
     var btnText = document.getElementById("moreBtn");
-  
+
     if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Meer Projecten";
-      moreText.style.display = "none";
+        dots.style.display = "inline";
+        btnText.innerHTML = "Meer Projecten";
+        moreText.style.display = "none";
     } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Minder Projecten";
-      moreText.style.display = "inline";
+        dots.style.display = "none";
+        btnText.innerHTML = "Minder Projecten";
+        moreText.style.display = "inline";
     }
-  }
+}
 
 // Load the page in X seconds
-  function loader() {
+function loader() {
     var myVar;
     myVar = setTimeout(showPage, 500);
-  }
-  
-  function showPage() {
+}
+
+function showPage() {
     document.getElementById("loader").style.display = "none";
     document.getElementById("loader2").style.display = "block";
-  }
+}
+
+// Hotjar Tracking Code for https://chris.friemann.nl
+(function (h, o, t, j, a, r) {
+    h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+    h._hjSettings = { hjid: 1229659, hjsv: 6 };
+    a = o.getElementsByTagName('head')[0];
+    r = o.createElement('script'); r.async = 1;
+    r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+    a.appendChild(r);
+})(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
