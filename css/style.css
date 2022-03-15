@@ -585,7 +585,8 @@ body {
 
 .btn-more-projects {
   text-align: center;
-  background-color: #4b99ff;
+  background-color: #6aabff;
+  /* opacity: 0.79; */
   color: #f2f2f2;
   border: none;
   font-size: 2rem;
