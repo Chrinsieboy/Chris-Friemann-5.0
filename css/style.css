@@ -574,6 +574,13 @@ body {
   letter-spacing: 0.03rem;
 }
 
+.btn-php {
+  background-color: #6d7dc4;
+  color: #fff;
+  border: none;
+  letter-spacing: 0.03rem;
+}
+
 #more {
   display: none;
 }
