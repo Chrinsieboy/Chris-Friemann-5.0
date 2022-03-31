@@ -170,15 +170,15 @@ body {
 }
 
 .logo img {
-  height: 40px;
+  height: 90px;
 }
 
 .logo {
   position: absolute;
-  top: 0;
-  right: 162px;
+  bottom: 100px;
+  /* right: 70px; */
   height: 30px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
 }
 
 /* End SideNav/Burgermenu */
@@ -226,13 +226,24 @@ body {
 }
 
 .sub-title {
+  margin-top: -10px;
+  margin-bottom: 50px;
   font-size: 3rem;
   letter-spacing: 2px;
   text-align: center;
 }
 
+.socials {
+  margin-bottom: 10px;
+}
+
+.social {
+  font-size: 100px;
+  color: white;
+}
+
 .arrow-title {
-  margin-top: 20px;
+  margin-top: 50px;
   font-size: 70px;
 }
 
