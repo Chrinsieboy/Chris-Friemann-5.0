@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pagina niet gevonden | 404</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet">
+    <!-- <link type="text/css" rel="stylesheet" href="css/style.css" /> -->
+    <link type="text/css" rel="stylesheet" href="css/404.css" />
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <video class="display-opacity background-video" autoplay muted loop id="background-video">
+        <source src="./video/introfilm4.mp4" type="video/mp4">
+    </video>
+    <div id="notfound">
+        <div class="notfound">
+            <div class="notfound-404">
+                <h1>4<span></span>4</h1>
+            </div>
+            <h2>Owh! ik ben bang dat deze pagina niet bestaat...</h2>
+            <p>Het kan natuurlijk ook zijn dat de pagina een andere naam heeft of dat je een typfout hebt
+                gemaakt.<br>Probeer het gerust nog eens.</p>
+            <a href="/">Terug naar het begin</a>
+        </div>
+    </div>
+</body>
+<!-- Deze pagina is half template, half eigen design. De template is gemaakt door Colorlib (https://colorlib.com) -->
+
+</html>
