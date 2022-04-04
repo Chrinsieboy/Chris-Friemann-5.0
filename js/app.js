@@ -49,17 +49,6 @@ function readMore() {
     }
 }
 
-// Load the page in X seconds
-function loader() {
-    var myVar;
-    myVar = setTimeout(showPage, 500);
-}
-
-function showPage() {
-    document.getElementById("loader").style.display = "none";
-    document.getElementById("loader2").style.display = "block";
-}
-
 // Hotjar Tracking Code for https://chris.friemann.nl
 (function (h, o, t, j, a, r) {
     h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
