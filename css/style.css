@@ -270,7 +270,7 @@ body {
 .about-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   margin-left: 30px;
   margin-right: 30px;
