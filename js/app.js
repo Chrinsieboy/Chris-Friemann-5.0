@@ -7,6 +7,28 @@ function closeNav() {
     document.getElementById("SideNavBar").style.width = "0";
 }
 
+// Language selection
+function languageOpen() {
+    document.getElementById("dropdown").classList.toggle("language-show");
+}
+
+window.onclick = function (event) {
+    if (!event.target.matches('.language-dropbtn')) {
+        var dropdowns = document.getElementsByClassName("language-dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('language-show')) {
+                openDropdown.classList.remove('language-show');
+            }
+        }
+    }
+}
+
+function languageEnglish(){
+    window.location.href = "/en";
+}
+
 // Scrolling to the top of the page
 function scrollToTop() {
     document.body.scrollTop = 0;
