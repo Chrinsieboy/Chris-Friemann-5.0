@@ -29,6 +29,10 @@ function languageEnglish(){
     window.location.href = "/en";
 }
 
+function languageDutch(){
+    window.location.href = "/";
+}
+
 // Scrolling to the top of the page
 function scrollToTop() {
     document.body.scrollTop = 0;
