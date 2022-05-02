@@ -118,7 +118,7 @@ body {
 /* SideNav/Burgermenu */
 
 .sidenav1 {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   position: fixed;
   margin-left: 5px;
   z-index: 1;
@@ -159,13 +159,82 @@ body {
   margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav2 {
-    padding-top: 15px;
+
+
+@media screen and (min-width: 800px) {
+  .overlay {
+    display: none;
   }
 
-  .sidenav2 a {
-    font-size: 18px;
+  .overlay-content {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .sidenav2 {
+    display: none;
+  }
+
+  .sidenav1 {
+    display: none;
+  }
+
+  /* Overlay for mobile */
+
+  .overlay {
+    display: relative;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    background-color: rgb(27, 27, 27);
+    background-color: rgba(27, 27, 27, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #f2f2f2;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px
+    }
+
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
   }
 }
 

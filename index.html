@@ -17,18 +17,32 @@
     <video class="display-opacity background-video" autoplay muted loop id="background-video">
         <source src="./video/introfilm4.mp4" type="video/mp4">
     </video>
-    <div class="sidenav1">
-        <span style="font-size: 30px;cursor: pointer;font-weight: bolder;" onclick="openNav()">&#9776;</span>
-        <div id="SideNavBar" class="sidenav2">
-            <a href="javascript:void(0)" class="logo" onclick="scrollToTop()">
-                <img src="./img/logo.png" alt="logo">
-            </a>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="javascript:void(0)" class="navlink" onclick="scrollToTop()">Home</a>
-            <a href="javascript:void(0)" class="navlink" onclick="scrollToAbout()">Over</a>
-            <a href="javascript:void(0)" class="navlink" onclick="scrollToProjects()">Projecten</a>
-            <a href="javascript:void(0)" class="navlink" onclick="scrollToContact()">Contact</a>
-            <a href="javascript:void(0)" class="navlink" onclick="scrollToContact()">Download<br>CV</a>
+    <div class="navbars">
+        <div class="sidenav1">
+            <span style="font-size: 30px;cursor: pointer;font-weight: bolder;" onclick="openNav()">&#9776;</span>
+            <div id="SideNavBar" class="sidenav2">
+                <a href="javascript:void(0)" class="logo" onclick="scrollToTop()">
+                    <img src="./img/logo.png" alt="logo">
+                </a>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="javascript:void(0)" class="navlink" onclick="scrollToTop()">Home</a>
+                <a href="javascript:void(0)" class="navlink" onclick="scrollToAbout()">Over</a>
+                <a href="javascript:void(0)" class="navlink" onclick="scrollToProjects()">Projecten</a>
+                <a href="javascript:void(0)" class="navlink" onclick="scrollToContact()">Contact</a>
+                <a href="javascript:void(0)" class="navlink" onclick="scrollToContact()">Download<br>CV</a>
+            </div>
+        </div>
+        <span style="font-size: 30px;cursor: pointer;font-weight: bolder;color: white;"
+            onclick="openMobileNav()">&#9776;</span>
+        <div id="MobileNavbar" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeMobileNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="javascript:void(0)" class="navlink" onclick="scrollToTop()">Home</a>
+                <a href="javascript:void(0)" class="navlink" onclick="scrollToAbout()">Over</a>
+                <a href="javascript:void(0)" class="navlink" onclick="scrollToProjects()">Projecten</a>
+                <a href="javascript:void(0)" class="navlink" onclick="scrollToContact()">Contact</a>
+                <a href="javascript:void(0)" class="navlink" onclick="scrollToContact()">Download<br>CV</a>
+            </div>
         </div>
     </div>
     <div class="language">
