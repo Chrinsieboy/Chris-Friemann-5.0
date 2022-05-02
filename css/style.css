@@ -117,6 +117,8 @@ body {
 
 /* SideNav/Burgermenu */
 
+
+
 .sidenav1 {
   color: rgb(255, 255, 255);
   position: fixed;
@@ -162,6 +164,15 @@ body {
 
 
 @media screen and (min-width: 800px) {
+
+  .navbar-type-1 {
+    display: block;
+  }
+  
+  .navbar-type-2 {
+    display: none;
+  }
+
   .overlay {
     display: none;
   }
@@ -173,6 +184,15 @@ body {
 
 
 @media screen and (max-width: 800px) {
+
+  .navbar-type-1 {
+    display: none;
+  }
+  
+  .navbar-type-2 {
+    display: block;
+  }
+  
   .sidenav2 {
     display: none;
   }
