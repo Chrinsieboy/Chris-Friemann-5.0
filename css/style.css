@@ -326,6 +326,7 @@ body {
   margin-top: 30vh;
   letter-spacing: 5px;
   text-align: center;
+  transition: 1s;
 }
 
 .sub-title {
@@ -334,21 +335,105 @@ body {
   font-size: 3rem;
   letter-spacing: 2px;
   text-align: center;
+  transition: 1s;
 }
 
 .socials {
   margin-bottom: 10px;
+  transition: 1s;
 }
 
 .social {
   font-size: 100px;
   color: white;
+  transition: 1s;
 }
 
 .arrow-title {
   margin-top: 50px;
   font-size: 70px;
+  transition: 1s;
 }
+
+@media screen and (max-width:600px) {
+  .main-title {
+    font-size: 4rem;
+    margin-top: 10vh;
+    letter-spacing: 5px;
+    text-align: center;
+    transition: 1s;
+  }
+
+  .sub-title {
+    margin-top: -10px;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
+    transition: 1s;
+  }
+
+  .socials {
+    margin-bottom: 10px;
+    transition: 1s;
+  }
+
+  .social {
+    font-size: 100px;
+    color: white;
+    transition: 1s;
+  }
+
+  .arrow-title {
+    margin-top: 50px;
+    font-size: 70px;
+    transition: 1s;
+  }
+}
+
+@media screen and (max-width:360px) {
+  .main-title {
+    font-size: 3rem;
+    margin-top: 10vh;
+    letter-spacing: 2px;
+    text-align: center;
+    transition: 1s;
+  }
+
+  .sub-title {
+    margin-top: -10px;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
+    transition: 1s;
+  }
+
+  .socials {
+    margin-bottom: 10px;
+    transition: 1s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    color: #f2f2f2;
+  }
+
+  .social {
+    font-size: 100px;
+    color: white;
+    transition: 1s;
+  }
+
+  .arrow-title {
+    margin-top: 50px;
+    font-size: 70px;
+    transition: 1s;
+  }
+}
+
 
 .display-opacity {
   opacity: 0.70;
