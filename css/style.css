@@ -1300,15 +1300,10 @@ body {
 
 /* Footer */
 
-.footer-background {
-  background-color: #F5F5F5;
-}
-
 .footer {
   background-color: #525252;
   padding: 10px;
   position: relative;
-  border-radius: 255px 0px 0px 0px;
 }
 
 .footer-container {
