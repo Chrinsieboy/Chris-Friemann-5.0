@@ -7,6 +7,14 @@ function closeNav() {
     document.getElementById("SideNavBar").style.width = "0";
 }
 
+function openMobileNav() {
+    document.getElementById("MobileNavbar").style.width = "100%";
+}
+
+function closeMobileNav() {
+    document.getElementById("MobileNavbar").style.width = "0%";
+}
+
 // Language selection
 function languageOpen() {
     document.getElementById("dropdown").classList.toggle("language-show");
@@ -25,11 +33,11 @@ window.onclick = function (event) {
     }
 }
 
-function languageEnglish(){
+function languageEnglish() {
     window.location.href = "/en";
 }
 
-function languageDutch(){
+function languageDutch() {
     window.location.href = "/";
 }
 
@@ -38,24 +46,28 @@ function scrollToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
     document.getElementById("SideNavBar").style.width = "0";
+    document.getElementById("MobileNavbar").style.width = "0";
 }
 
 // Scrolling to the about section
 function scrollToAbout() {
     document.getElementById("About").scrollIntoView();
     document.getElementById("SideNavBar").style.width = "0";
+    document.getElementById("MobileNavbar").style.width = "0";
 }
 
 // Scrolling to the projects section
 function scrollToProjects() {
     document.getElementById("Projects").scrollIntoView();
     document.getElementById("SideNavBar").style.width = "0";
+    document.getElementById("MobileNavbar").style.width = "0";
 }
 
 // Scrolling to the contact section
 function scrollToContact() {
     document.getElementById("Contact").scrollIntoView();
     document.getElementById("SideNavBar").style.width = "0";
+    document.getElementById("MobileNavbar").style.width = "0";
 }
 
 // Read more for the projects

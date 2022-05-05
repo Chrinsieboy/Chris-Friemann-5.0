@@ -4,10 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website van Chris Friemann">
+    <meta name="keywords" content="Portfolio, Chris, Friemann, Chris Friemann, developer, development, ">
+    <meta name="author" content="Chris Friemann">
+    <meta property="og:image" content="img/favicon.ico">
+    <meta property="og:title" content="Portfolio website van Chris Friemann">
+    <meta property="og:description" content="Portfolio website van Chris Friemann">
+    <meta property="og:url" content="https://www.chris.friemann.nl/">
+    <meta property="og:type" content="website">
     <title>Chris Friemann Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/background.css"> -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <script src="js/app.js"></script>
     <script src="https://kit.fontawesome.com/f83e64cd36.js" crossorigin="anonymous"></script>
@@ -17,18 +25,32 @@
     <video class="display-opacity background-video" autoplay muted loop id="background-video">
         <source src="./video/introfilm4.mp4" type="video/mp4">
     </video>
-    <div class="sidenav1">
-        <span style="font-size: 30px;cursor: pointer;font-weight: bolder;" onclick="openNav()">&#9776;</span>
-        <div id="SideNavBar" class="sidenav2">
-            <a href="javascript:void(0)" class="logo" onclick="scrollToTop()">
-                <img src="./img/logo.png" alt="logo">
-            </a>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="javascript:void(0)" class="navlink" onclick="scrollToTop()">Home</a>
-            <a href="javascript:void(0)" class="navlink" onclick="scrollToAbout()">Over</a>
-            <a href="javascript:void(0)" class="navlink" onclick="scrollToProjects()">Projecten</a>
-            <a href="javascript:void(0)" class="navlink" onclick="scrollToContact()">Contact</a>
-            <a href="javascript:void(0)" class="navlink" onclick="scrollToContact()">Download<br>CV</a>
+    <div class="navbars">
+        <div class="sidenav1 navbar-type-1">
+            <span style="font-size: 35px;cursor: pointer;font-weight: bolder;" onclick="openNav()">&#9776;</span>
+            <div id="SideNavBar" class="sidenav2">
+                <a href="javascript:void(0)" class="logo" onclick="scrollToTop()">
+                    <img src="./img/logo.png" alt="logo">
+                </a>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="javascript:void(0)" class="navlink" onclick="scrollToTop()">Home</a>
+                <a href="javascript:void(0)" class="navlink" onclick="scrollToAbout()">Introductie</a>
+                <a href="javascript:void(0)" class="navlink" onclick="scrollToProjects()">Projecten</a>
+                <a href="javascript:void(0)" class="navlink" onclick="scrollToContact()">Contact</a>
+            </div>
+        </div>
+        <div class="navbar-type-2">
+            <span style="font-size: 35px;cursor: pointer;font-weight: bolder; color: rgb(228, 228, 228);"
+                onclick="openMobileNav()">&#9776;</span> 
+            <div id="MobileNavbar" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeMobileNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="javascript:void(0)" class="navlink" onclick="scrollToTop()">Home</a>
+                    <a href="javascript:void(0)" class="navlink" onclick="scrollToAbout()">Introductie</a>
+                    <a href="javascript:void(0)" class="navlink" onclick="scrollToProjects()">Projecten</a>
+                    <a href="javascript:void(0)" class="navlink" onclick="scrollToContact()">Contact</a>
+                </div>
+            </div>
         </div>
     </div>
     <div class="language">
@@ -48,10 +70,11 @@
         </div>
         <div class="socials">
             <a href="https://www.linkedin.com/in/chrisfriemann/" target="_blank"><i
-                    class="fab fa-linkedin social"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-                href="https://github.com/chrinsieboy/" target="_blank"><i
-                    class="fab fa-github social"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="javascript:void(0)"
-                onclick="scrollToContact()"><i class="fas fa-envelope social"></i></a>
+                    class="fab fa-linkedin social bouncy"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+                href="https://github.com/chrinsieboy/" target="_blank"><i class="fab fa-github social bouncy"
+                    style="animation-delay:0.14s"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="javascript:void(0)"
+                onclick="scrollToContact()"><i class="fas fa-envelope social bouncy"
+                    style="animation-delay:0.28s"></i></a>
         </div>
         <a href="javascript:void(0)" style="text-decoration : none" class="no-underline" onclick="scrollToAbout()">
             <i class="fa fa-arrow-down arrow-title text-center"></i>
@@ -62,9 +85,9 @@
         <div class="about-container">
             <div class="about-text-container">
                 <h2 class="about-hey">Hallo, </h2>
-                <p class="about-me" style="width: 850px; word-wrap: normal;">Ik ben Chris Friemann, 17 jaar oud en ik
-                    studeer aan de software developer opleiding bij Landstede MBO.<br><br> In deze portfolio kunt u mijn
-                    projecten en mijn CV bekijken en kunt u contact met mij opnemen. </p>
+                <p class="about-me">Ik ben Chris Friemann, 17 jaar oud en ik studeer aan de software developer opleiding
+                    bij Landstede MBO. <br><br> In deze portfolio kunt u mijn projecten en mijn CV bekijken en kunt u
+                    contact met mij opnemen. </p>
             </div>
             <div class="about-profile-container tooltip">
                 <img class="about-img" src="img/profile.jpg" alt="profile picture">
@@ -75,128 +98,168 @@
     <div class="projects-background" id="Projects">
         <h1 class="projects-title text-center">Projecten</h1>
         <h3 class="projects-sub-title text-center">Projecten waar ik aan werk&lpar;te&rpar;</h3>
-        <!-- Mocht het zo zijn dat hier te veel projecten komen te staan, dan gaan we wisselen naar een  -->
-        <div class="timeline">
-            <div class="project-container project-right">
-                <div class="project-content">
-                    <img class="project-img-mh text-center" src="./img/muntenharker.png" alt="Website">
-                    <h2><a class="project-title" href="https://muntenharker.newdeveloper.nl/"
-                            target="_blank">MuntenHarker</a></h2>
-                    <h5><u>April 2022</u></h5>
-                    <p>MuntenHarker is een kleinschalige boekhouding voor eigen gebruik.</p>
-                    <button type="button" id="busy" class="btn btn-done">Done</button>
-                    <button type="button" id="school" class="btn btn-school">School</button>
-                    <button type="button" id="laravel" class="btn btn-laravel">Laravel</button>
-                    <button type="button" id="php" class="btn btn-php">PHP</button>
-                    <button type="button" id="html" class="btn btn-html">HTML</button>
-                    <button type="button" id="css" class="btn btn-css">CSS</button>
-                    <button type="button" id="js" class="btn btn-js">JS</button>
-                </div>
-            </div>
-            <div class="project-container project-left">
-                <div class="project-content">
-                    <iframe class="yt" src="https://www.youtube.com/embed/sioMTMRVze0?controls=0"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; watch-later"
-                        allowfullscreen></iframe>
-                    <h2><a class="project-title" href="https://www.youtube.com/watch?v=sioMTMRVze0"
-                            target="_blank">Software Developer "Vlog"</a></h2>
-                    <h5><u>Februari 2022</u></h5>
-                    <p>Mijn school had een vlog nodig voor de open dagen. Samen met een klasgenoot hebben wij een "vlog"
-                        opgenomen en die staat nu op youtube.</p>
-                    <button type="button" id="school" class="btn btn-school">School</button>
-                    <button type="button" id="irl" class="btn btn-irl">IRL</button>
-                </div>
-            </div>
-            <div class="project-container project-right">
-                <div class="project-content">
-                    <img class="project-img-bbg text-center" src="./img/BigBrainGame.png" alt="Website">
-                    <h2><a class="project-title" href="https://omen-mastermind.newdeveloper.nl/"
-                            target="_blank">BigBrainGame</a></h2>
-                    <h5><u>Januari 2022</u></h5>
-                    <p>BigBrainGame is een spel gebaseerd op <a class="no-decoration"
-                            href="https://nl.wikipedia.org/wiki/Mastermind" target="_blank">mastermind</a>.</p>
-                    <button type="button" id="done" class="btn btn-done">Done</button>
-                    <button type="button" id="school" class="btn btn-school">School</button>
-                    <button type="button" id="laravel" class="btn btn-laravel">Laravel</button>
-                    <button type="button" id="php" class="btn btn-php">PHP</button>
-                    <button type="button" id="html" class="btn btn-html">HTML</button>
-                    <button type="button" id="css" class="btn btn-css">CSS</button>
-                </div>
-            </div>
-            <span id="dots"></span>
-            <span class="more" id="more">
-                <div class="project-container project-left">
-                    <div class="project-content">
-                        <img class="project-img-port" src="./img/cf_website.png" alt="Website">
-                        <h2><a class="project-title" href="http://chris-friemann.newdeveloper.nl/" target="_blank">Chris
-                                Friemann Portfolio 2</a></h2>
-                        <h5><u>November 2021</u></h5>
-                        <p>Portfolio die we met school moesten maken.</p>
-                        <button type="button" id="done" class="btn btn-done">Done</button>
-                        <button type="button" id="school" class="btn btn-school">School</button>
-                        <button type="button" id="laravel" class="btn btn-laravel">Laravel</button>
-                        <button type="button" id="php" class="btn btn-php">PHP</button>
-                        <button type="button" id="html" class="btn btn-html">HTML</button>
-                        <button type="button" id="css" class="btn btn-css">CSS</button>
-                    </div>
-                </div>
-                <div class="project-container project-right">
-                    <div class="project-content">
-                        <img class="project-img-bth" src="./img/bijtanteharma.jpg" alt="Website">
-                        <h2><a class="project-title" href="http://bijtanteharma.nl/" target="_blank">Bij Tante Harma</a>
-                        </h2>
-                        <h5><u>Januari 2020</u></h5>
-                        <p>Dit is een project die ik maakte voor mijn tante omdat ze die nodig had voor haar
-                            gastouderadres. </p>
-                        <button type="button" id="done" class="btn btn-done">Done</button>
-                        <button type="button" id="php" class="btn btn-php">PHP</button>
-                        <button type="button" id="html" class="btn btn-html">HTML</button>
-                        <button type="button" id="css" class="btn btn-css">CSS</button>
-                        <button type="button" id="js" class="btn btn-js">JS</button>
-                    </div>
-                </div>
-                <div class="project-container project-left">
-                    <div class="project-content">
-                        <img class="project-img-biology" src="./img/biologie-longen.png" alt="Website">
-                        <h1><a class="project-title" href="https://biologie-longen.jouwweb.nl" target="_blank">Biologie
-                                - Longen</a></h1>
-                        <h5><u>December 2018</u></h5>
-                        <p>Voor biologie moest ik een website maken maar dat mocht niet op mijn eigen. Dus deed ik het
-                            op jouwweb.nl.</p>
-                        <button type="button" id="done" class="btn btn-done">Done</button>
-                        <button type="button" id="school" class="btn btn-school">School</button>
-                        <button type="button" id="jouwweb" class="btn btn-jouwweb">Jouwweb</button>
-                    </div>
-                </div>
-                <div class="project-container project-right">
-                    <div class="project-content">
-                        <img class="project-img" src="./img/Achtergrond.png" alt="Website">
-                        <h1><a class="project-title" href="javascript:void(0)" onclick="scrollToTop()">Chris Friemann
-                                Portfolio</a></h1>
-                        <h5><u>Maart 2018</u></h5>
-                        <p>Dit is mijn eerste project ooit dat nog steeds gaande is! Dit project is mijn portfolio die
-                            ik nog steeds bij houd en gebruik om te oefenen. </p>
-                        <button type="button" id="done" class="btn btn-done">Done</button>
-                        <button type="button" id="php" class="btn btn-php">PHP</button>
-                        <button type="button" id="html" class="btn btn-html">HTML</button>
-                        <button type="button" id="css" class="btn btn-css">CSS</button>
-                        <button type="button" id="js" class="btn btn-js">JS</button>
-                    </div>
-                </div>
-            </span>
+        <div class="projects-filter" id="myBtnContainer">
+            <button class="btn active project-filter" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn btn-done project-filter" onclick="filterSelection('done')">Done</button>
+            <button class="btn btn-busy project-filter" onclick="filterSelection('busy')">In progress</button>
+            <button class="btn btn-school project-filter" onclick="filterSelection('school')">School</button>
+            <button class="btn btn-laravel project-filter" onclick="filterSelection('laravel')">Laravel</button>
+            <button class="btn btn-php project-filter" onclick="filterSelection('php')">PHP</button>
+            <button class="btn btn-jouwweb project-filter" style="color:white;" onclick="filterSelection('jouwweb')">JouwWeb</button>
+            <button class="btn btn-html project-filter" onclick="filterSelection('html')">HTML</button>
+            <button class="btn btn-css project-filter" onclick="filterSelection('css')">CSS</button>
+            <button class="btn btn-js project-filter" onclick="filterSelection('js')">JS</button>
+            <button class="btn btn-irl project-filter" onclick="filterSelection('irl')">IRL</button>
         </div>
-        <div class="text-center">
-            <button class="btn btn-more-projects text-center" onclick="readMore()" id="moreBtn">Meer Projecten</button>
+        <div class="project-grid">
+            <div class="project-container filterDiv done school laravel php html css js">
+                <img class="project-img-mh" src="/img/muntenharker.png" alt="">
+                <div class="project-text-container">
+                    <div class="badges">
+                        <button id="done" class="project-btn btn-done">Done</button>
+                        <button id="school" class="project-btn btn-school">School</button>
+                        <button id="laravel" class="project-btn btn-laravel">Laravel</button>
+                        <button id="php" class="project-btn btn-php">PHP</button>
+                        <button id="html" class="project-btn btn-html">HTML</button>
+                        <button id="css" class="project-btn btn-css">CSS</button>
+                        <button id="js" class="project-btn btn-js">JS</button>
+                    </div>
+                    <h1 class="project-title"><a style="text-decoration: underline;color: #000000;"
+                            href="https://muntenharker.newdeveloper.nl/" target="_blank">MuntenHarker</a></h1>
+                    <h3 class="project-sub-title">April 2022</h3>
+                    <p class="project-description">Muntenharker was een project die ik voor school moest maken met een
+                        klasgenoot. De bedoeling was om een boekhouding te maken met in/uitgaven en spaardoelen met een
+                        inlogsysteem.</p>
+                </div>
+            </div>
+            <div class="project-container filterDiv done school irl">
+                <div class="yt-container">
+                    <iframe class="yt" src="https://www.youtube.com/embed/sioMTMRVze0?controls=1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; watch-later; fullscreen;"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="project-text-container">
+                    <div class="badges">
+                        <button id="done" class="project-btn btn-done">Done</button>
+                        <button id="school" class="project-btn btn-school">School</button>
+                        <button id="irl" class="project-btn btn-irl">IRL</button>
+                    </div>
+                    <h1 class="project-title">Software Developer Vlog</h1>
+                    <h3 class="project-sub-title">Februari 2022</h3>
+                    <p class="project-description">Mijn school had een vlog nodig voor de open dagen. Samen met een
+                        klasgenoot hebben wij een "vlog" opgenomen en die staat nu op youtube.</p>
+                </div>
+            </div>
+            <div class="project-container filterDiv done school laravel php html css js">
+                <img class="project-img-bbg" src="/img/BigBrainGame2.png" alt="">
+                <div class="project-text-container">
+                    <div class="badges" style="margin-top: -10px;">
+                        <button id="done" class="project-btn btn-done">Done</button>
+                        <button id="school" class="project-btn btn-school">School</button>
+                        <button id="laravel" class="project-btn btn-laravel">Laravel</button>
+                        <button id="php" class="project-btn btn-php">PHP</button>
+                        <button id="html" class="project-btn btn-html">HTML</button>
+                        <button id="css" class="project-btn btn-css">CSS</button>
+                        <button id="js" class="project-btn btn-js">JS</button>
+                    </div>
+                    <h1 class="project-title"><a style="text-decoration: underline;color: #000000;"
+                            href="https://omen-mastermind.newdeveloper.nl/" target="_blank">BigBrainGame</a></h1>
+                    <h3 class="project-sub-title">Januari 2022</h3>
+                    <p class="project-description">BigBrainGame is een computerspel gebaseerd op het bordspel <a
+                            href="https://nl.wikipedia.org/wiki/Mastermind" target="_blank">Mastermind</a>. In deze
+                        versie moet je inplaats van kleuren, cijfers raden. En om het extra moeilijk te maken moet je
+                        elk rijtje cijfers onthouden.</p>
+                </div>
+            </div>
+            <div class="project-container filterDiv done school laravel php html css js">
+                <img class="project-img-port" src="/img/cf_website.png" alt="">
+                <div class="project-text-container">
+                    <div class="badges">
+                        <button id="done" class="project-btn btn-done">Done</button>
+                        <button id="school" class="project-btn btn-school">School</button>
+                        <button id="laravel" class="project-btn btn-laravel">Laravel</button>
+                        <button id="php" class="project-btn btn-php">PHP</button>
+                        <button id="html" class="project-btn btn-html">HTML</button>
+                        <button id="css" class="project-btn btn-css">CSS</button>
+                        <button id="js" class="project-btn btn-js">JS</button>
+                    </div>
+                    <h1 class="project-title"><a style="text-decoration: underline;color: #000000;"
+                            href="https://chris-friemann.newdeveloper.nl/" target="_blank">School Portfolio</a></h1>
+                    <h3 class="project-sub-title">November 2021</h3>
+                    <p class="project-description">Als beginnend project voor school hebben wij een portfolio gemaakt in
+                        laravel.</p>
+                </div>
+            </div>
+            <div class="project-container filterDiv done php html css js">
+                <img class="project-img-bth" src="/img/bijtanteharma.png" alt="">
+                <div class="project-text-container">
+                    <div class="badges">
+                        <button id="done" class="project-btn btn-done">Done</button>
+                        <button id="php" class="project-btn btn-php">PHP</button>
+                        <button id="html" class="project-btn btn-html">HTML</button>
+                        <button id="css" class="project-btn btn-css">CSS</button>
+                        <button id="js" class="project-btn btn-js">JS</button>
+                    </div>
+                    <h1 class="project-title"><a style="text-decoration: underline;color: #000000;"
+                            href="http://bijtanteharma.nl/" target="_blank">Bij Tante Harma</a></h1>
+                    <h3 class="project-sub-title">Januari 2020</h3>
+                    <p class="project-description">Bijtanteharma was een project die ik in opdracht van mijn tante
+                        maakte. Deze website had zij nodig voor haar gastouderopvang.</p>
+                </div>
+            </div>
+            <div class="project-container filterDiv done school jouwweb">
+                <img class="project-img-biology" src="/img/biologie-longen.png" alt="">
+                <div class="project-text-container">
+                    <div class="badges">
+                        <button id="done" class="project-btn btn-done">Done</button>
+                        <button id="school" class="project-btn btn-school">School</button>
+                        <button id="html" class="project-btn btn-html">HTML</button>
+                        <button id="css" class="project-btn btn-css">CSS</button>
+                        <button id="js" class="project-btn btn-js">JS</button>
+                    </div>
+                    <h1 class="project-title"><a style="text-decoration: underline;color: #000000;"
+                            href="https://biologie-longen.jouwweb.nl/" target="_blank">Biologie - Longen</a></h1>
+                    <h3 class="project-sub-title">December 2018</h3>
+                    <p class="project-description">Voor biologie in de middelbare moest ik een website maken maar dat
+                        mocht niet met iets anders dan jouwweb.</p>
+                </div>
+            </div>
+            <div class="project-container filterDiv done php html css js">
+                <img class="project-img-original-port" src="/img/Achtergrond.png" alt="">
+                <div class="project-text-container">
+                    <div class="badges">
+                        <button id="done" class="project-btn btn-done">Done</button>
+                        <button id="php" class="project-btn btn-php">PHP</button>
+                        <button id="html" class="project-btn btn-html">HTML</button>
+                        <button id="css" class="project-btn btn-css">CSS</button>
+                        <button id="js" class="project-btn btn-js">JS</button>
+                    </div>
+                    <h1 class="project-title"><a style="text-decoration: underline;color: #000000;"
+                            href="javascript:void(0)" onclick="scrollToTop()">Portfolio Chris Friemann</a></h1>
+                    <h3 class="project-sub-title">Maart 2018</h3>
+                    <p class="project-description">Het eerste project waar ik mee bezig ben geweest. En in de loop van
+                        de jaren is dit project blijven updaten voor betere looks en voor mij om te leren.</p>
+                </div>
+            </div>
+        </div>
+        <div class="space" style="height: 50px">
+            <br>
         </div>
     </div>
     <div class="contact-background" id="Contact">
         <h2 class="contact-title text-center">Contact</h2>
+        <div class="space" style="height: 85px">
+            <br>
+        </div>
         <div class="contact-container">
-            <div class="contact-text-container" style="width: 450px;">
-                <p class="contact-me">Wilt u contact met mij opnemen voor een vraag, mijn cv of iets anders? Stuur dan
-                    een bericht via dit contactformulier of via <a class="no-decoration"
-                        href="mailto:chrisfriemann1@gmail.com">chrisfriemann1@gmail.com </a></p>
+            <div class="contact-text-container">
+                <div class="contact-text-container">
+                    <p class="contact-me">Wilt u contact met mij opnemen voor een vraag, mijn cv of iets anders? Stuur
+                        dan een bericht via dit contactformulier of via <a class="no-decoration"
+                            href="mailto:chrisfriemann1@gmail.com" rel="noopener noreferrer">chrisfriemann1@gmail.com
+                        </a></p>
+                </div>
             </div>
             <div class="contact-profile-container">
                 <form action="contact.php" method="post">
@@ -217,22 +280,70 @@
                 </form>
             </div>
         </div>
+        <div class="space" style="height: 200px">
+            <br>
+        </div>
     </div>
-    <div class="footer-background">
-        <div class="footer">
-            <div class="footer-container">
-                <div class="footer-text-container">
-                    <p class="footer-text">© 2022 Chris Friemann</p>
-                    <p class="footer-sub-text">Gemaakt met ❤️</p>
-                    <p class="footer-sub-text">
-                        <a class="no-underline" href="https://www.flaticon.com/free-icons/uk" title="Flaticon"
-                            target="_blank">Icons gemaakt door Freepik - Flaticon</a> and <a class="no-underline"
-                            href="http://fontawesome.com" target="_blank" title="FontAwesome">FontAwesome</a>
-                    </p>
-                </div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-text-container">
+                <p class="footer-text">© 2022 Chris Friemann</p>
+                <p class="footer-sub-text">Gemaakt met ❤️</p>
+                <p class="footer-sub-text">
+                    <a class="no-underline" href="https://www.flaticon.com/free-icons/uk" title="Flaticon"
+                        target="_blank">Icons gemaakt door Freepik - Flaticon</a> and <a class="no-underline"
+                        href="http://fontawesome.com" target="_blank" title="FontAwesome">FontAwesome</a>
+                </p>
             </div>
         </div>
     </div>
 </body>
+<script>
+    filterSelection("all")
+    function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+        // document.getElementById("Projects").scrollIntoView();
+    }
+
+    function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+        }
+        // document.getElementById("Projects").scrollIntoView();
+    }
+
+    function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+            }
+        }
+        element.className = arr1.join(" ");
+        // document.getElementById("Projects").scrollIntoView();
+    }
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+</script>
 
 </html>
