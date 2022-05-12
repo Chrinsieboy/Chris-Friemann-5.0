@@ -2,7 +2,7 @@
 
 # About Chris Friemann Portfolio 5.0
 This is the fifth version portfolio of Chris Friemann.
-and it is a new version of the portfolio. 😉
+and it is a new version of the portfolio. 🎈
 
 ## License and Copyright
 This is a open source project. You can find the source code on [GitHub](https://github.com/chrinsieboy/Chris-Friemann-5.0).
