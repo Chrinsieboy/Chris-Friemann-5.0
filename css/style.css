@@ -781,6 +781,15 @@ body {
   transition: 1s;
 }
 
+.project-img-vd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 285px;
+  border-radius: 15px;
+  transition: 1s;
+}
+
 .filterDiv {
   float: left;
   display: none;
