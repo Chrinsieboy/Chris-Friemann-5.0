@@ -6,3 +6,4 @@ and it is a new version of the portfolio. 🎈
 
 ## License and Copyright
 This is a open source project. You can find the source code on [GitHub](https://github.com/chrinsieboy/Chris-Friemann-5.0).
+ 
